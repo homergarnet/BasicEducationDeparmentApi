@@ -1,0 +1,20 @@
+Date :21/12/2022 2:07:28 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountIsAdmin":false}
+Message :Invalid salt version
+StackTrace :   at BCrypt.Net.BCrypt.HashPassword(String inputKey, String salt, Boolean enhancedEntropy, HashType hashType)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 42
+   at BasicEducationDepartment.Controllers.AuthorizationController.Login(Account account) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 55
+
+-----------------------------------------------------------------------------
+
+Date :21/12/2022 2:15:40 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountIsAdmin":false}
+Message :Invalid salt version
+StackTrace :   at BCrypt.Net.BCrypt.HashPassword(String inputKey, String salt, Boolean enhancedEntropy, HashType hashType)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 42
+   at BasicEducationDepartment.Controllers.AuthorizationController.Login(Account account) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 55
+
+-----------------------------------------------------------------------------
+

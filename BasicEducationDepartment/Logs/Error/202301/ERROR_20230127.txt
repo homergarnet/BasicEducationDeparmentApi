@@ -1,0 +1,16 @@
+Date :27/01/2023 8:47:48 am
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountType":null,"AccountIsAdmin":false,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 36
+   at BasicEducationDepartment.Controllers.AuthorizationController.TeacherLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 89
+
+-----------------------------------------------------------------------------
+
+Date :27/01/2023 8:47:55 am
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountType":null,"AccountIsAdmin":false,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 36
+   at BasicEducationDepartment.Controllers.AuthorizationController.TeacherLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 89
+
+-----------------------------------------------------------------------------
+

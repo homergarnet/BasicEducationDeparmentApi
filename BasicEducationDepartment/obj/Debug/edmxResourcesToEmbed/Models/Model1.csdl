@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BasicEducationDepartmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountUser" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="AccountPassword" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="AccountType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="AccountIsAdmin" Type="Boolean" Nullable="false" />
+    <Property Name="AccountToken" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="DateTimeCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateTimeUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="AccountProfiles" Relationship="Self.FK_AccountProfile_Account" FromRole="Account" ToRole="AccountProfile" />
+    <NavigationProperty Name="StudentReferralForms" Relationship="Self.FK_StudentReferalForm_Account" FromRole="Account" ToRole="StudentReferralForm" />
+  </EntityType>
+  <EntityType Name="AccountProfile">
+    <Key>
+      <PropertyRef Name="AccountProfileID" />
+    </Key>
+    <Property Name="AccountProfileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountID" Type="Int32" Nullable="false" />
+    <Property Name="APName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APEmailAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="APJobDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APContactNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="APMothersName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APFathersName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APImageName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="APImagePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="APBirthMonth" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APBirthDay" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APBirthYear" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateTimeCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateTimeUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Account" Relationship="Self.FK_AccountProfile_Account" FromRole="AccountProfile" ToRole="Account" />
+  </EntityType>
+  <EntityType Name="StudentReferralForm">
+    <Key>
+      <PropertyRef Name="StudentReferralID" />
+    </Key>
+    <Property Name="StudentReferralID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountID" Type="Int32" Nullable="false" />
+    <Property Name="StudentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentReferredBy" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentReasonForReferral" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentLevelSection" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMoodBehaviors" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentMoodBehaviorOthers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentAcademicConcerns" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentAcademicConcernOthers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentRelationship" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentRelationshipOthers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentHomeConcerns" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentHomeConcernsOthers" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="StudentInitialActionsTaken" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsAgreeToReferred" Type="Boolean" />
+    <Property Name="StudentStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentAcknowledgeById" Type="Int32" Nullable="false" />
+    <Property Name="StudentTo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentDesignation" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentThisIsToInform" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentWhomReferred" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentHasStarted" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentBeingAttended" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentHisHerStatus" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentReferredTo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="StudentNumberOfFollowUps" Type="Int32" />
+    <Property Name="StudentTrackingNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="DateTimeCreated" Type="DateTime" Precision="3" />
+    <Property Name="DateTimeUpdated" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Account" Relationship="Self.FK_StudentReferalForm_Account" FromRole="StudentReferralForm" ToRole="Account" />
+  </EntityType>
+  <Association Name="FK_AccountProfile_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="AccountProfile" Type="Self.AccountProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="AccountProfile">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentReferalForm_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="StudentReferralForm" Type="Self.StudentReferralForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="StudentReferralForm">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BasicEducationDepartmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="AccountProfiles" EntityType="Self.AccountProfile" />
+    <EntitySet Name="StudentReferralForms" EntityType="Self.StudentReferralForm" />
+    <AssociationSet Name="FK_AccountProfile_Account" Association="Self.FK_AccountProfile_Account">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="AccountProfile" EntitySet="AccountProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentReferalForm_Account" Association="Self.FK_StudentReferalForm_Account">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="StudentReferralForm" EntitySet="StudentReferralForms" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

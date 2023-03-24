@@ -1,0 +1,42 @@
+Date :11/02/2023 9:40:53 am
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.getTokenById(Int32 id, String accountType) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 246
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.GetTokenById(Int32 id, String type) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 80
+
+-----------------------------------------------------------------------------
+
+Date :11/02/2023 9:42:23 am
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.getTokenById(Int32 id, String accountType) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 246
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.GetTokenById(Int32 id, String type) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 80
+
+-----------------------------------------------------------------------------
+
+Date :11/02/2023 9:52:49 am
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.getTokenById(Int32 id, String accountType) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 246
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.GetTokenById(Int32 id, String type) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 94
+
+-----------------------------------------------------------------------------
+
+Date :11/02/2023 9:52:51 am
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.getTokenById(Int32 id, String accountType) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 246
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.GetTokenById(Int32 id, String type) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 94
+
+-----------------------------------------------------------------------------
+
+Date :11/02/2023 9:53:48 am
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.getTokenById(Int32 id, String accountType) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 246
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.GetTokenById(Int32 id, String type) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 94
+
+-----------------------------------------------------------------------------
+
+Date :11/02/2023 9:57:15 am
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.getTokenById(Int32 id, String accountType) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 246
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.GetTokenById(Int32 id, String type) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 94
+
+-----------------------------------------------------------------------------
+

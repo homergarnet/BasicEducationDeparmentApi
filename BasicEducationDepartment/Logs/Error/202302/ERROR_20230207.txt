@@ -1,0 +1,22 @@
+Date :07/02/2023 3:23:59 pm
+Body :{"AccountID":0,"APName":null,"APEmailAddress":"test","APAddress":null,"APJobDescription":null,"APContactNo":null,"APMothersName":null,"APFathersName":null,"APImageName":null,"APImagePath":null,"APBirthMonth":null,"APBirthDay":null,"APBirthYear":null,"DateTimeCreated":null,"AccountType":null}
+Message :Processing of the HTTP request resulted in an exception. Please see the HTTP response returned by the 'Response' property of this exception for details.
+StackTrace :   at BasicEducationDepartment.Controllers.ForgotPasswordController.<StudentCReateFWToken>d__4.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 37
+
+-----------------------------------------------------------------------------
+
+Date :07/02/2023 3:26:36 pm
+Body :{"AccountID":0,"APName":null,"APEmailAddress":"test","APAddress":null,"APJobDescription":null,"APContactNo":null,"APMothersName":null,"APFathersName":null,"APImageName":null,"APImagePath":null,"APBirthMonth":null,"APBirthDay":null,"APBirthYear":null,"DateTimeCreated":null,"AccountType":null}
+Message :Invalid 'HttpContent' instance provided. It does not have a content type header starting with 'multipart/'.
+Parameter name: content
+StackTrace :   at System.Net.Http.Formatting.Parsers.MimeMultipartBodyPartParser.ValidateArguments(HttpContent content, Int64 maxMessageSize, Boolean throwOnError)
+   at System.Net.Http.Formatting.Parsers.MimeMultipartBodyPartParser..ctor(HttpContent content, MultipartStreamProvider streamProvider, Int64 maxMessageSize, Int32 maxBodyPartHeaderSize)
+   at System.Net.Http.HttpContentMultipartExtensions.<ReadAsMultipartAsync>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BasicEducationDepartment.Controllers.ForgotPasswordController.<StudentCReateFWToken>d__4.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDepartment\BasicEducationDepartment\Controllers\ForgotPasswordController.cs:line 42
+
+-----------------------------------------------------------------------------
+

@@ -1,0 +1,24 @@
+Date :30/01/2023 7:45:20 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"adminss","AccountType":null,"AccountIsAdmin":false,"DateTimeCreated":null,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 36
+   at BasicEducationDepartment.Controllers.AuthorizationController.AdminLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 127
+
+-----------------------------------------------------------------------------
+
+Date :30/01/2023 7:46:39 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountType":null,"AccountIsAdmin":false,"DateTimeCreated":null,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 36
+   at BasicEducationDepartment.Controllers.AuthorizationController.AdminLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 127
+
+-----------------------------------------------------------------------------
+
+Date :30/01/2023 7:49:32 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountType":null,"AccountIsAdmin":false,"DateTimeCreated":null,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 36
+   at BasicEducationDepartment.Controllers.AuthorizationController.AdminLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 127
+
+-----------------------------------------------------------------------------
+

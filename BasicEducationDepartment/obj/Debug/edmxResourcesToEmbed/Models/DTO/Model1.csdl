@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BasicEducationDepartmentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountUser" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="AccountPassword" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="AccountIsAdmin" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="AccountProfiles" Relationship="Self.FK_AccountProfile_Account" FromRole="Account" ToRole="AccountProfile" />
+  </EntityType>
+  <EntityType Name="AccountProfile">
+    <Key>
+      <PropertyRef Name="AccountProfileID" />
+    </Key>
+    <Property Name="AccountProfileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountID" Type="Int32" Nullable="false" />
+    <Property Name="APName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APEmailAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="APJobDescription" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="APContactNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="APMothersName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APFathersName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="APImageName" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="APImagePath" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Account" Relationship="Self.FK_AccountProfile_Account" FromRole="AccountProfile" ToRole="Account" />
+  </EntityType>
+  <Association Name="FK_AccountProfile_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="AccountProfile" Type="Self.AccountProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="AccountProfile">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BasicEducationDepartmentEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="AccountProfiles" EntityType="Self.AccountProfile" />
+    <AssociationSet Name="FK_AccountProfile_Account" Association="Self.FK_AccountProfile_Account">
+      <End Role="Account" EntitySet="Accounts" />
+      <End Role="AccountProfile" EntitySet="AccountProfiles" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

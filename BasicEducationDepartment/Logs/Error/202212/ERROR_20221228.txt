@@ -1,0 +1,14 @@
+Date :28/12/2022 12:00:36 pm
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.AuthTokenParser..ctor(HttpRequestMessage request) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\AuthTokenParser.cs:line 12
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 137
+
+-----------------------------------------------------------------------------
+
+Date :28/12/2022 3:12:59 pm
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int32 user_id) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 63
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 138
+
+-----------------------------------------------------------------------------
+

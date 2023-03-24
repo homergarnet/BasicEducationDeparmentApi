@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BasicEducationDepartmentModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="AccountID" />
+    </Key>
+    <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountUser" Type="varchar" MaxLength="255" />
+    <Property Name="AccountPassword" Type="varchar" MaxLength="1000" />
+    <Property Name="AccountIsAdmin" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AccountProfile">
+    <Key>
+      <PropertyRef Name="AccountProfileID" />
+    </Key>
+    <Property Name="AccountProfileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountID" Type="int" Nullable="false" />
+    <Property Name="APName" Type="varchar" MaxLength="255" />
+    <Property Name="APEmailAddress" Type="varchar" MaxLength="255" />
+    <Property Name="APAddress" Type="text" />
+    <Property Name="APJobDescription" Type="varchar" MaxLength="50" />
+    <Property Name="APContactNo" Type="text" />
+    <Property Name="APMothersName" Type="varchar" MaxLength="255" />
+    <Property Name="APFathersName" Type="varchar" MaxLength="255" />
+    <Property Name="APImageName" Type="varchar" MaxLength="1000" />
+    <Property Name="APImagePath" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="StudentReferalForm">
+    <Key>
+      <PropertyRef Name="StudentReferralID" />
+    </Key>
+    <Property Name="StudentReferralID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AccountID" Type="int" Nullable="false" />
+    <Property Name="StudentName" Type="varchar" MaxLength="255" />
+    <Property Name="StudentReferredBy" Type="varchar" MaxLength="255" />
+    <Property Name="StudentReasonForReferal" Type="varchar" MaxLength="255" />
+    <Property Name="StudentLevelSection" Type="varchar" MaxLength="255" />
+    <Property Name="StudentMoodBehaviors" Type="text" />
+    <Property Name="StudentMoodBehaviorOthers" Type="text" />
+    <Property Name="StudentAcademicConcerns" Type="text" />
+    <Property Name="StudentAcademicConcernOthers" Type="text" />
+    <Property Name="StudentRelationship" Type="text" />
+    <Property Name="StudentRelationshipOthers" Type="text" />
+    <Property Name="StudentHomeConcerns" Type="text" />
+    <Property Name="StudentHomeConcernsOthers" Type="text" />
+    <Property Name="StudentInitialActionsTaken" Type="text" />
+    <Property Name="IsAgreeToReferred" Type="bit" />
+    <Property Name="StudentStatus" Type="varchar" MaxLength="255" />
+    <Property Name="StudentAcknowledgeBy" Type="varchar" MaxLength="255" />
+    <Property Name="StudentTo" Type="varchar" MaxLength="255" />
+    <Property Name="StudentDesignation" Type="varchar" MaxLength="255" />
+    <Property Name="StudentThisIsToInform" Type="varchar" MaxLength="255" />
+    <Property Name="StudentWhomReferred" Type="varchar" MaxLength="255" />
+    <Property Name="StudentHasStarted" Type="varchar" MaxLength="255" />
+    <Property Name="StudentBeingAttended" Type="varchar" MaxLength="255" />
+    <Property Name="StudentHisHerStatus" Type="varchar" MaxLength="255" />
+    <Property Name="StudentReferredTo" Type="varchar" MaxLength="255" />
+    <Property Name="StudentNumberOfFollowUps" Type="int" />
+    <Property Name="DateTimeCreated" Type="datetime" />
+    <Property Name="DateTimeUpdated" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_AccountProfile_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="AccountProfile" Type="Self.AccountProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="AccountProfile">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StudentReferalForm_Account">
+    <End Role="Account" Type="Self.Account" Multiplicity="1" />
+    <End Role="StudentReferalForm" Type="Self.StudentReferalForm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Account">
+        <PropertyRef Name="AccountID" />
+      </Principal>
+      <Dependent Role="StudentReferalForm">
+        <PropertyRef Name="AccountID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BasicEducationDepartmentModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AccountProfile" EntityType="Self.AccountProfile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StudentReferalForm" EntityType="Self.StudentReferalForm" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AccountProfile_Account" Association="Self.FK_AccountProfile_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="AccountProfile" EntitySet="AccountProfile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StudentReferalForm_Account" Association="Self.FK_StudentReferalForm_Account">
+      <End Role="Account" EntitySet="Account" />
+      <End Role="StudentReferalForm" EntitySet="StudentReferalForm" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

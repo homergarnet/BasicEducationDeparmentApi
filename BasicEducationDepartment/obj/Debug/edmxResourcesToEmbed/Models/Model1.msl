@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BasicEducationDepartmentModelStoreContainer" CdmEntityContainer="BasicEducationDepartmentEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="BasicEducationDepartmentModel.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="AccountUser" ColumnName="AccountUser" />
+          <ScalarProperty Name="AccountPassword" ColumnName="AccountPassword" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="AccountIsAdmin" ColumnName="AccountIsAdmin" />
+          <ScalarProperty Name="AccountToken" ColumnName="AccountToken" />
+          <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+          <ScalarProperty Name="DateTimeUpdated" ColumnName="DateTimeUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AccountProfiles">
+      <EntityTypeMapping TypeName="BasicEducationDepartmentModel.AccountProfile">
+        <MappingFragment StoreEntitySet="AccountProfile">
+          <ScalarProperty Name="AccountProfileID" ColumnName="AccountProfileID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="APName" ColumnName="APName" />
+          <ScalarProperty Name="APEmailAddress" ColumnName="APEmailAddress" />
+          <ScalarProperty Name="APAddress" ColumnName="APAddress" />
+          <ScalarProperty Name="APJobDescription" ColumnName="APJobDescription" />
+          <ScalarProperty Name="APContactNo" ColumnName="APContactNo" />
+          <ScalarProperty Name="APMothersName" ColumnName="APMothersName" />
+          <ScalarProperty Name="APFathersName" ColumnName="APFathersName" />
+          <ScalarProperty Name="APImageName" ColumnName="APImageName" />
+          <ScalarProperty Name="APImagePath" ColumnName="APImagePath" />
+          <ScalarProperty Name="APBirthMonth" ColumnName="APBirthMonth" />
+          <ScalarProperty Name="APBirthDay" ColumnName="APBirthDay" />
+          <ScalarProperty Name="APBirthYear" ColumnName="APBirthYear" />
+          <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+          <ScalarProperty Name="DateTimeUpdated" ColumnName="DateTimeUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentReferralForms">
+      <EntityTypeMapping TypeName="BasicEducationDepartmentModel.StudentReferralForm">
+        <MappingFragment StoreEntitySet="StudentReferralForm">
+          <ScalarProperty Name="StudentReferralID" ColumnName="StudentReferralID" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="StudentName" ColumnName="StudentName" />
+          <ScalarProperty Name="StudentReferredBy" ColumnName="StudentReferredBy" />
+          <ScalarProperty Name="StudentReasonForReferral" ColumnName="StudentReasonForReferral" />
+          <ScalarProperty Name="StudentLevelSection" ColumnName="StudentLevelSection" />
+          <ScalarProperty Name="StudentMoodBehaviors" ColumnName="StudentMoodBehaviors" />
+          <ScalarProperty Name="StudentMoodBehaviorOthers" ColumnName="StudentMoodBehaviorOthers" />
+          <ScalarProperty Name="StudentAcademicConcerns" ColumnName="StudentAcademicConcerns" />
+          <ScalarProperty Name="StudentAcademicConcernOthers" ColumnName="StudentAcademicConcernOthers" />
+          <ScalarProperty Name="StudentRelationship" ColumnName="StudentRelationship" />
+          <ScalarProperty Name="StudentRelationshipOthers" ColumnName="StudentRelationshipOthers" />
+          <ScalarProperty Name="StudentHomeConcerns" ColumnName="StudentHomeConcerns" />
+          <ScalarProperty Name="StudentHomeConcernsOthers" ColumnName="StudentHomeConcernsOthers" />
+          <ScalarProperty Name="StudentInitialActionsTaken" ColumnName="StudentInitialActionsTaken" />
+          <ScalarProperty Name="IsAgreeToReferred" ColumnName="IsAgreeToReferred" />
+          <ScalarProperty Name="StudentStatus" ColumnName="StudentStatus" />
+          <ScalarProperty Name="StudentAcknowledgeById" ColumnName="StudentAcknowledgeById" />
+          <ScalarProperty Name="StudentTo" ColumnName="StudentTo" />
+          <ScalarProperty Name="StudentDesignation" ColumnName="StudentDesignation" />
+          <ScalarProperty Name="StudentThisIsToInform" ColumnName="StudentThisIsToInform" />
+          <ScalarProperty Name="StudentWhomReferred" ColumnName="StudentWhomReferred" />
+          <ScalarProperty Name="StudentHasStarted" ColumnName="StudentHasStarted" />
+          <ScalarProperty Name="StudentBeingAttended" ColumnName="StudentBeingAttended" />
+          <ScalarProperty Name="StudentHisHerStatus" ColumnName="StudentHisHerStatus" />
+          <ScalarProperty Name="StudentReferredTo" ColumnName="StudentReferredTo" />
+          <ScalarProperty Name="StudentNumberOfFollowUps" ColumnName="StudentNumberOfFollowUps" />
+          <ScalarProperty Name="StudentTrackingNumber" ColumnName="StudentTrackingNumber" />
+          <ScalarProperty Name="DateTimeCreated" ColumnName="DateTimeCreated" />
+          <ScalarProperty Name="DateTimeUpdated" ColumnName="DateTimeUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

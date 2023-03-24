@@ -1,0 +1,108 @@
+Date :31/12/2022 12:05:28 pm
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.Controllers.EmailController.SendEmail(EmailDTO dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\EmailController.cs:line 25
+
+-----------------------------------------------------------------------------
+
+Date :31/12/2022 12:12:36 pm
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.Controllers.EmailController.SendEmail(EmailDTO dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\EmailController.cs:line 25
+
+-----------------------------------------------------------------------------
+
+Date :31/12/2022 12:16:10 pm
+Message :Object reference not set to an instance of an object.
+StackTrace :   at BasicEducationDepartment.Controllers.EmailController.SendEmail(EmailDTO dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\EmailController.cs:line 25
+
+-----------------------------------------------------------------------------
+
+Date :31/12/2022 1:00:42 pm
+Message :Error reading MIME multipart body part.
+StackTrace :   at System.Net.Http.HttpContentMultipartExtensions.<MultipartReadAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Net.Http.HttpContentMultipartExtensions.<ReadAsMultipartAsync>d__9`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BasicEducationDepartment.Controllers.EmailController.<SendEmail>d__1.MoveNext() in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\EmailController.cs:line 62
+
+-----------------------------------------------------------------------------
+
+Date :31/12/2022 1:58:47 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountIsAdmin":false,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Keyword not supported: 'data source'.
+StackTrace :   at System.Data.Entity.Core.EntityClient.Internal.DbConnectionOptions.ParseInternal(IDictionary`2 parsetable, String connectionString, IList`1 validKeywords)
+   at System.Data.Entity.Core.EntityClient.Internal.DbConnectionOptions..ctor(String connectionString, IList`1 validKeywords)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.Entity.Core.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Entity.Internal.LazyInternalConnection.InitializeFromConnectionStringSetting(ConnectionStringSettings appConfigConnection)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name, AppConfig config)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ProviderName()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ProviderName()
+   at System.Data.Entity.Internal.DefaultModelCacheKeyFactory.Create(DbContext context)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 60
+   at BasicEducationDepartment.Controllers.AuthorizationController.AdminLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 89
+
+-----------------------------------------------------------------------------
+
+Date :31/12/2022 1:59:11 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountIsAdmin":false,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Keyword not supported: 'data source'.
+StackTrace :   at System.Data.Entity.Core.EntityClient.Internal.DbConnectionOptions.ParseInternal(IDictionary`2 parsetable, String connectionString, IList`1 validKeywords)
+   at System.Data.Entity.Core.EntityClient.Internal.DbConnectionOptions..ctor(String connectionString, IList`1 validKeywords)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.Entity.Core.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Entity.Internal.LazyInternalConnection.InitializeFromConnectionStringSetting(ConnectionStringSettings appConfigConnection)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name, AppConfig config)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ProviderName()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ProviderName()
+   at System.Data.Entity.Internal.DefaultModelCacheKeyFactory.Create(DbContext context)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 60
+   at BasicEducationDepartment.Controllers.AuthorizationController.AdminLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 89
+
+-----------------------------------------------------------------------------
+
+Date :31/12/2022 2:02:45 pm
+Body :{"AccountID":0,"AccountUser":"admin","AccountPassword":"admin","AccountIsAdmin":false,"AccountProfiles":[],"StudentReferalForms":[]}
+Message :Keyword not supported: 'data source'.
+StackTrace :   at System.Data.Entity.Core.EntityClient.Internal.DbConnectionOptions.ParseInternal(IDictionary`2 parsetable, String connectionString, IList`1 validKeywords)
+   at System.Data.Entity.Core.EntityClient.Internal.DbConnectionOptions..ctor(String connectionString, IList`1 validKeywords)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.ChangeConnectionString(String newConnectionString)
+   at System.Data.Entity.Core.EntityClient.EntityConnection..ctor(String connectionString)
+   at System.Data.Entity.Internal.LazyInternalConnection.InitializeFromConnectionStringSetting(ConnectionStringSettings appConfigConnection)
+   at System.Data.Entity.Internal.LazyInternalConnection.TryInitializeFromAppConfig(String name, AppConfig config)
+   at System.Data.Entity.Internal.LazyInternalConnection.Initialize()
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ProviderName()
+   at System.Data.Entity.Internal.LazyInternalContext.get_ProviderName()
+   at System.Data.Entity.Internal.DefaultModelCacheKeyFactory.Create(DbContext context)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.signin(Account dto, Boolean isAdmin) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 60
+   at BasicEducationDepartment.Controllers.AuthorizationController.AdminLogin(Account dto) in D:\Basic Education Project\BasicEducationDepartment\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 89
+
+-----------------------------------------------------------------------------
+
