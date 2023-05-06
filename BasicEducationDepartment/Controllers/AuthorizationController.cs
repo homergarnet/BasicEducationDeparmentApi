@@ -4,9 +4,13 @@ using BasicEducationDepartment.Models;
 using BasicEducationDepartment.Models.DTO;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
@@ -20,6 +24,7 @@ namespace BasicEducationDepartment.Controllers
         private ErrorLogs _logger = new ErrorLogs();
         private UsersUtils _userUtils = new UsersUtils();
         private BasicEducationDepartmentEntities db = new BasicEducationDepartmentEntities();
+        private readonly string _api = ConfigurationManager.AppSettings["api"];
         // GET: Authorization
         [Route("create")]
         [HttpPost]
@@ -50,25 +55,89 @@ namespace BasicEducationDepartment.Controllers
             }
         }
 
-        [Route("login")]
-        [HttpPost]
-        [AllowAnonymous]
+        //Working but not needed for now
+        //[Route("login")]
+        //[HttpPost]
+        //[AllowAnonymous]
 
-        public IHttpActionResult Login([FromBody] Account dto)
+        //public IHttpActionResult Login([FromBody] Account dto)
+        //{
+
+        //    try
+        //    {
+
+        //        var user = _userUtils.signin(dto);
+        //        if (user == "Wrong user or password")
+        //        {
+        //            return BadRequest(user);
+        //        }
+        //        //return the jwt token
+        //        else
+        //        {
+        //            return Ok(user);
+        //        }
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //        _logger.createLogs(ex, JsonConvert.SerializeObject(dto));
+        //        return InternalServerError(ex);
+
+        //    }
+
+        //}
+
+        [HttpPost]
+        [Route("login")]
+        public async Task<dynamic> StudentLogin([FromBody] Account dto)
         {
 
             try
             {
 
-                var user = _userUtils.signin(dto);
-                if (user == "Wrong user or password")
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri("https://stdominiccollege.edu.ph/");
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                //this code allows you to accept body -> x-www-form-urlencoded 
+                var postData = new List<KeyValuePair<string, string>>();
+                postData.Add(new KeyValuePair<string, string>("api_key", "sdca_api_2023"));
+                postData.Add(new KeyValuePair<string, string>("student_number", dto.AccountUser));
+                HttpContent content = new FormUrlEncodedContent(postData);
+
+                //this code allows you to accept body -> (raw, json)
+                //string jsonData = "{\"name\":\"John\", \"age\":30}";
+                //HttpContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await client.PostAsync("https://stdominiccollege.edu.ph/SDCALMSv2/index.php/API/StudentTicketingAPI", content);
+                UsersUtils userUtils = new UsersUtils();
+                if (response.IsSuccessStatusCode)
                 {
-                    return BadRequest(user);
-                }
-                //return the jwt token
-                else
+                    string data = await response.Content.ReadAsStringAsync();
+                    dynamic result = JsonConvert.DeserializeObject(data);
+
+                    var studentNumber = Convert.ToInt32(result.Student_number);
+                    var newObj = new
+                    {
+                        StudentDetails = result,
+                        token = userUtils.getToken(studentNumber, "student"),
+                        apiLink = _api
+                    };
+                    if (result.Student_number == dto.AccountUser && result.Student_number == dto.AccountPassword)
+                    {
+                        dto.AccountType = "student";
+                        var user = _userUtils.createAccount(dto);
+                        return newObj;
+                    }
+                    else
+                    {
+                        return BadRequest("Wrong user or password");
+                    }
+
+                } else
                 {
-                    return Ok(user);
+                    return BadRequest("Not success fetch api");
                 }
 
             }
@@ -76,9 +145,11 @@ namespace BasicEducationDepartment.Controllers
             {
 
                 _logger.createLogs(ex, JsonConvert.SerializeObject(dto));
-                return InternalServerError(ex);
+                return BadRequest("Exception in creating account");
 
             }
+
+
 
         }
 
@@ -185,7 +256,7 @@ namespace BasicEducationDepartment.Controllers
             accountObj.AccountType = accountType;
             accountObj.DateTimeCreated = DateTime.Now;
             db.Accounts.Add(accountObj);
-            int accountId = accountObj.AccountID;
+            long accountId = accountObj.AccountID;
             AccountProfile accountProfileObj = new AccountProfile();
             accountProfileObj.AccountID = accountId;
             accountProfileObj.APName = model["FullName"];

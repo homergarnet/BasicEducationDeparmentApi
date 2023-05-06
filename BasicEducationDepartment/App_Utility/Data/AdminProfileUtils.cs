@@ -2,6 +2,7 @@
 using BasicEducationDepartment.Models.DTO;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
@@ -92,19 +93,26 @@ namespace BasicEducationDepartment.App_Utility.Data
 
         }
 
-        public List<StudentReferralFormDTO> GetStatusList(StudentReferralFormDTO dto)
+        public List<StudentReferralFormDTO> GetStatusList(StudentReferralFormDTO dto, long user_id = 0L)
         {
-            IQueryable<AccountProfile> baseQuery = db.AccountProfiles;
 
+
+            IQueryable<StudentReferralForm> baseQuery = db.StudentReferralForms;
+
+            if(user_id != 0L)
+            {
+                baseQuery = baseQuery.Include(z => z.Account).Where(z => z.Account.AccountUser == user_id.ToString());
+            }
             //baseQuery = baseQuery.Select(z => new
             //{
             //    APName = z.APName,
             //    APEmailAddress = z.APEmailAddress,
             //});
-            var result = db.StudentReferralForms.Select(z => new StudentReferralFormDTO
+            var result = baseQuery.Select(z => new StudentReferralFormDTO
             {
 
                 StudentReferralID = z.StudentReferralID,
+                StudentReasonForReferral = z.StudentReasonForReferral,
                 StudentMoodBehaviors = z.StudentMoodBehaviors,
                 StudentAcademicConcerns = z.StudentAcademicConcerns,
                 StudentRelationship = z.StudentRelationship,

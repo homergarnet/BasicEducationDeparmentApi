@@ -21,7 +21,7 @@ namespace BasicEducationDepartment.Models
             this.StudentReferralForms = new HashSet<StudentReferralForm>();
         }
     
-        public int AccountID { get; set; }
+        public long AccountID { get; set; }
         public string AccountUser { get; set; }
         public string AccountPassword { get; set; }
         public string AccountType { get; set; }

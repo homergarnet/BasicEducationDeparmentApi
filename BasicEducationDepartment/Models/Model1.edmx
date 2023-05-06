@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="AccountID" />
           </Key>
-          <Property Name="AccountID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AccountUser" Type="varchar" MaxLength="255" />
           <Property Name="AccountPassword" Type="varchar" MaxLength="1000" />
           <Property Name="AccountType" Type="varchar" MaxLength="255" />
@@ -23,7 +23,7 @@
             <PropertyRef Name="AccountProfileID" />
           </Key>
           <Property Name="AccountProfileID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="AccountID" Type="int" Nullable="false" />
+          <Property Name="AccountID" Type="bigint" Nullable="false" />
           <Property Name="APName" Type="varchar" MaxLength="255" />
           <Property Name="APEmailAddress" Type="varchar" MaxLength="255" />
           <Property Name="APAddress" Type="text" />
@@ -44,7 +44,7 @@
             <PropertyRef Name="StudentReferralID" />
           </Key>
           <Property Name="StudentReferralID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="AccountID" Type="int" Nullable="false" />
+          <Property Name="AccountID" Type="bigint" Nullable="false" />
           <Property Name="StudentName" Type="varchar" MaxLength="255" />
           <Property Name="StudentReferredBy" Type="varchar" MaxLength="255" />
           <Property Name="StudentReasonForReferral" Type="varchar" MaxLength="255" />
@@ -120,7 +120,7 @@
           <Key>
             <PropertyRef Name="AccountID" />
           </Key>
-          <Property Name="AccountID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AccountUser" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="AccountPassword" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <Property Name="AccountType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
@@ -136,7 +136,7 @@
             <PropertyRef Name="AccountProfileID" />
           </Key>
           <Property Name="AccountProfileID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="AccountID" Type="Int32" Nullable="false" />
+          <Property Name="AccountID" Type="Int64" Nullable="false" />
           <Property Name="APName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="APEmailAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="APAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
@@ -158,7 +158,7 @@
             <PropertyRef Name="StudentReferralID" />
           </Key>
           <Property Name="StudentReferralID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="AccountID" Type="Int32" Nullable="false" />
+          <Property Name="AccountID" Type="Int64" Nullable="false" />
           <Property Name="StudentName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="StudentReferredBy" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="StudentReasonForReferral" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />

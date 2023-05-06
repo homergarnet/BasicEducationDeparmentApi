@@ -1,0 +1,120 @@
+Date :01/05/2023 11:44:17 am
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int32 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 11:46:54 am
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int32 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 11:47:35 am
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int32 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 11:49:17 am
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int32 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 11:50:30 am
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int32 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:01:07 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:02:07 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:04:45 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:05:03 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id)
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto)
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:05:42 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:08:28 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+
+Date :01/05/2023 12:17:38 pm
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.StudentProfileUtils.CreateStudentReferralForm(StudentReferralFormDTO dto, Int64 user_id) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\StudentProfileUtils.cs:line 71
+   at BasicEducationDepartment.Controllers.StudentDashboardController.StudentReferralForm(StudentReferralFormDTO dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\StudentDashboardController.cs:line 142
+
+-----------------------------------------------------------------------------
+

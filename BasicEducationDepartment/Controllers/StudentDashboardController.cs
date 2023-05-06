@@ -4,6 +4,7 @@ using BasicEducationDepartment.Authorization;
 using BasicEducationDepartment.Models;
 using BasicEducationDepartment.Models.DTO;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -22,6 +23,7 @@ namespace BasicEducationDepartment.Controllers
 
         private ErrorLogs _logger = new ErrorLogs();
         private StudentProfileUtils _studentProfileUtils = new StudentProfileUtils();
+        private AdminProfileUtils _adminProfileUtils = new AdminProfileUtils();
         private UsersUtils _userUtils = new UsersUtils();
         private BasicEducationDepartmentEntities db = new BasicEducationDepartmentEntities();
 
@@ -172,6 +174,24 @@ namespace BasicEducationDepartment.Controllers
 
             }
 
+        }
+
+        [Route("student/get-status-list")]
+        [HttpPost]
+        public IHttpActionResult GetStatusList(StudentReferralFormDTO dto)
+        {
+            try
+            {
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                List<StudentReferralFormDTO> result = _adminProfileUtils.GetStatusList(dto, user_id);
+                return Ok(result);
+
+            }
+            catch (Exception ex)
+            {
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+            }
         }
 
 

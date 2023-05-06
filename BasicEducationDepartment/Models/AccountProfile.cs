@@ -15,7 +15,7 @@ namespace BasicEducationDepartment.Models
     public partial class AccountProfile
     {
         public int AccountProfileID { get; set; }
-        public int AccountID { get; set; }
+        public long AccountID { get; set; }
         public string APName { get; set; }
         public string APEmailAddress { get; set; }
         public string APAddress { get; set; }

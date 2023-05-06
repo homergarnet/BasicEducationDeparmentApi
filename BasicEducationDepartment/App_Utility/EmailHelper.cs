@@ -14,7 +14,7 @@ namespace BasicEducationDepartment.App_Utility
             try
             {
                 MailMessage mm = new MailMessage();
-                mm.From = new MailAddress("wherearetheyare@gmail.com");
+                mm.From = new MailAddress("onlinestudentconsultation@gmail.com");
                 //12384261238426Qq
                 mm.To.Add(to);
                 mm.Subject = subject;
@@ -33,7 +33,7 @@ namespace BasicEducationDepartment.App_Utility
                 smtp.EnableSsl = true;
                 //gmail acc and app password(NOT REAL PASSWORD)
                 //https://stackoverflow.com/questions/18503333/the-smtp-server-requires-a-secure-connection-or-the-client-was-not-authenticated/66169647#66169647
-                smtp.Credentials = new System.Net.NetworkCredential("wherearetheyare@gmail.com", "esxvaxbjikgqexro");
+                smtp.Credentials = new System.Net.NetworkCredential("onlinestudentconsultation@gmail.com", "vhbfwcvsvkdeqnpu");
                 smtp.Send(mm);
                 return true;
             }

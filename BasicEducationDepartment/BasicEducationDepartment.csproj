@@ -308,6 +308,7 @@
     <Compile Include="Models\DTO\AccountProfileDTO.cs" />
     <Compile Include="Models\DTO\AdminDTO.cs" />
     <Compile Include="Models\DTO\EmailDTO.cs" />
+    <Compile Include="Models\DTO\StudentDTO.cs" />
     <Compile Include="Models\DTO\StudentReferralFormDTO.cs" />
     <Compile Include="Models\DTO\UsersDTO.cs" />
     <Compile Include="Models\Model1.Context.cs">

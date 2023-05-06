@@ -23,6 +23,7 @@ namespace BasicEducationDepartment.App_Utility.Data
             Account accountObj = new Account();
             accountObj.AccountUser = dto.AccountUser;
             accountObj.AccountPassword = BCrypt.Net.BCrypt.HashPassword(dto.AccountPassword.Trim());
+            accountObj.AccountType = dto.AccountType;
             db.Accounts.Add(accountObj);
             db.SaveChanges();
             return "Successfully Created Account";
@@ -332,7 +333,7 @@ namespace BasicEducationDepartment.App_Utility.Data
 
         }
 
-        public string getToken(int userid, string usertype, int expireMinutes = 300)
+        public string getToken(long userid, string usertype, int expireMinutes = 300)
         {
             // Create payload
             var _payloads = new Dictionary<string, string>();

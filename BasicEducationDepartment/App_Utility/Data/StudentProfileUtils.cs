@@ -48,12 +48,13 @@ namespace BasicEducationDepartment.App_Utility.Data
 
         }
 
-        public StudentReferralFormDTO CreateStudentReferralForm(StudentReferralFormDTO dto, int user_id)
+        public StudentReferralFormDTO CreateStudentReferralForm(StudentReferralFormDTO dto, long user_id)
         {
 
+            var accountId = db.Accounts.Where(z => z.AccountUser == user_id.ToString()).Select(z => z.AccountID).FirstOrDefault();
             StudentReferralForm studentReferalFormObj = new StudentReferralForm();
 
-            studentReferalFormObj.AccountID = user_id;
+            studentReferalFormObj.AccountID = accountId;
             studentReferalFormObj.StudentName = dto.StudentName;
             studentReferalFormObj.StudentReferredBy = dto.StudentReferredBy;
             studentReferalFormObj.StudentReasonForReferral = dto.StudentReasonForReferral;

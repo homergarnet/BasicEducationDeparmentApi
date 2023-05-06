@@ -1,0 +1,97 @@
+Date :06/05/2023 7:27:58 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:30:58 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:31:34 am
+Body :{"AccountID":0,"AccountUser":"20151085","AccountPassword":"20151085","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:38:13 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:40:36 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:43:40 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :The best overloaded method match for 'long.Parse(string)' has some invalid arguments
+StackTrace :   at CallSite.Target(Closure , CallSite , Type , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 120
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:47:58 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:51:42 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 130
+
+-----------------------------------------------------------------------------
+
+Date :06/05/2023 7:56:50 am
+Body :{"AccountID":0,"AccountUser":"202201472","AccountPassword":"202201472","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while updating the entries. See the inner exception for details.
+StackTrace :   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at BasicEducationDepartment.App_Utility.Data.UsersUtils.createAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\App_Utility\Data\UsersUtils.cs:line 29
+   at BasicEducationDepartment.Controllers.AuthorizationController.CreateAccount(Account dto) in D:\asp.net mvc projects\Basic Education Department\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 37
+
+-----------------------------------------------------------------------------
+

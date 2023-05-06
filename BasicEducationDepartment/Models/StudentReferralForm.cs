@@ -15,7 +15,7 @@ namespace BasicEducationDepartment.Models
     public partial class StudentReferralForm
     {
         public int StudentReferralID { get; set; }
-        public int AccountID { get; set; }
+        public long AccountID { get; set; }
         public string StudentName { get; set; }
         public string StudentReferredBy { get; set; }
         public string StudentReasonForReferral { get; set; }

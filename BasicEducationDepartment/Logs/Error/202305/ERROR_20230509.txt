@@ -1,0 +1,20 @@
+Date :5/9/2023 10:21:55 AM
+Body :{"AccountID":0,"AccountUser":"201800409","AccountPassword":"201800409","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :Cannot perform runtime binding on a null reference
+StackTrace :   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in C:\Users\Pesim\Downloads\Capstone May\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 120
+
+-----------------------------------------------------------------------------
+
+Date :5/9/2023 3:02:19 PM
+Body :{"AccountID":0,"AccountUser":"1000","AccountPassword":"1000","AccountType":"student","AccountIsAdmin":false,"AccountToken":null,"DateTimeCreated":null,"DateTimeUpdated":null,"AccountProfiles":[],"StudentReferralForms":[]}
+Message :An error occurred while sending the request.
+StackTrace :   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BasicEducationDepartment.Controllers.AuthorizationController.<StudentLogin>d__5.MoveNext() in C:\Users\Pesim\Downloads\Capstone May\BasicEducationDeparmentApi\BasicEducationDepartment\Controllers\AuthorizationController.cs:line 113
+
+-----------------------------------------------------------------------------
+
