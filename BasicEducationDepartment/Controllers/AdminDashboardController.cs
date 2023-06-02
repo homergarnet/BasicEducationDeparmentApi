@@ -233,5 +233,167 @@ namespace BasicEducationDepartment.Controllers
 
         }
 
+        [Route("get-analytics-for-category")]
+        [HttpGet]
+        public IHttpActionResult GetAnalyticsForCategory()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetAnalyticsForCategory();
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
+        [Route("get-academic-concern-graph")]
+        [HttpGet]
+        public IHttpActionResult GetAcademicConcernGraph()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetAcademicConcernGraph();
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
+        [Route("get-mood-behavior-graph")]
+        [HttpGet]
+        public IHttpActionResult GetMoodBehaviorGraph()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetMoodBehaviorGraph();
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
+        [Route("get-relationship-graph")]
+        [HttpGet]
+        public IHttpActionResult GetRelationshipGraph()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetRelationshipGraph();
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
+        [Route("get-home-concern-graph")]
+        [HttpGet]
+        public IHttpActionResult GetHomeConcernGraph()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetHomeConcernGraph();
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
+        [Route("get-referral-form-graph")]
+        [HttpGet]
+        public IHttpActionResult GetReferralFormGraph()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetReferralFormGraph();
+
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
+        [Route("get-most-pick-reasons")]
+        [HttpGet]
+        public IHttpActionResult GetMostPickReasons()
+        {
+
+            try
+            {
+
+                int user_id = Convert.ToInt32(new AuthTokenParser(this.Request).ReadValue("userid"));
+                var res = _adminProfileUtils.GetMostPickReasons();
+                return Ok(res);
+
+            }
+            catch (Exception ex)
+            {
+
+                _logger.createLogs(ex);
+                return InternalServerError(ex);
+
+            }
+
+        }
+
     }
 }
